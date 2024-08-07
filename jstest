@@ -1,0 +1,131 @@
+// //PRACTICE PROBLEMS
+// // 1. Variable Declaration and Initialization
+// //    - Write a JavaScript script that declares a variable named name and initializes it with your name.
+// //  Then, log the message "Hello, [name]!" to the console.
+// // ANSWER:-
+let name =("M.A.GAFOOR")
+
+console.log("Hello!! " + name );
+
+// 2. Basic Arithmetic Operations
+//    - Create a script that declares two variables, a and b, with values 5 and 3, respectively.
+//  Calculate and log the sum, difference, product, and quotient of a and b to the console.
+// Answer
+let a=5;
+let b=3;
+console.log(a+b);
+console.log(a-b);
+console.log(a*b);
+console.log(a/b);
+
+// 3. String Manipulation
+// - Write a function that takes a string as an argument and returns the string in uppercase.
+//  Call the function with a sample string and log the result.
+// Answer
+function toUpperCase(str) {
+return str.toUpperCase();
+}
+console.log(toUpperCase("gafoor"));
+
+// 4. Conditional Statements
+//    - Create a script that prompts the user to enter a number. If the number is even, log "The number is even" 
+//    to the console. If the number is odd, log "The number is odd" to the console.
+//Answer
+ let number = parseInt(prompt("Enter the number"));
+ if(number % 2===0){
+    console.log(number + " is even number ");
+ } else {
+    console.log(number + " is odd number ")
+ }
+
+//  5. Arrays
+//  - Declare an array of your favorite fruits. Write a function that takes the array 
+//  as an argument and logs each fruit to the console using a for loop.
+//Answer
+let Fruits = ["Kiwi" , "Mango" , "pineApple" , "Banana"];
+for(i=0; i<=Fruits.length; i++){
+    console.log (Fruits[i]);
+}
+
+// 6. Objects
+//    - Create an object representing a book with properties for title, author, and yearPublished. Write a function that
+// takes the book object as an argument and logs a description of the book to the console.
+//Answer
+ let book = {
+    Author : "Mag" ,
+Title : "MoonLight",
+YearPublished : 2002
+ };
+ function describeBook(book){
+   console.log(`"${book.Title}" is written by ${book.Author} in ${book.YearPublished}` ) ;
+ }
+ describeBook (book);
+
+//  7. Functions
+//  - Write a function that takes two numbers as arguments and returns their sum. 
+//  Call the function with two sample numbers and log the result.
+// Answer
+let A= 10
+let B = 20
+function sum(A,B) {
+   return A+B;
+    sum(A+B)
+}
+console.log("The answer is " + (A+B));
+
+
+// 8. Loops
+//    - Write a function that uses a for loop to log numbers from 1 to 10 to the console.
+//    Modify the function to log only the even numbers in this range.
+//Answer
+function logNumbers() {
+    for (let i = 1; i <= 10; i++) {
+        console.log(i);
+    }
+}
+
+logNumbers();
+
+// modification to log only the even number
+
+function logEvenNumbers() {
+    for (let i = 1; i <= 10; i++) {
+        if (i % 2 === 0) {
+            console.log(i);
+        }
+    }
+}
+
+logEvenNumbers();
+
+//9. Error Handling
+// - Write a function that takes two numbers as arguments and returns their division result.
+//  Use a try...catch block to handle any division by zero errors and log an appropriate message to the console.
+//Answer:-
+let x = 10;
+let y = 20;
+function dividenumbers (x,y) {
+    try {
+        if (y === 0) {
+            throw new error("Division of zero is not allowed");
+
+        }
+        return x/y;
+
+    }catch (error){
+        console.error(error.message);
+    }
+}
+
+console.log(dividenumbers);
+console.log(dividenumbers(x,y));
+
+//10. Random Number Generation
+// - Write a function that generates a random number between 1 and 100 and logs it to the console
+
+let C = Math.floor(Math.random() * 100);
+
+console.log(C);
+
+
+alert("THANK FOR WATCHING!!!")
